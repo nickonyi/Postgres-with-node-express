@@ -4,9 +4,9 @@ import { Pool } from "pg";
 // We're hardcoding them here for simplicity
 const pool = new Pool({
   host: "localhost", // or wherever the db is hosted
-  user: "<role_name>",
+  user: "phantommobb",
   database: "top_users",
-  password: "<role_password>",
+  password: "admin123",
   port: 5432, // default PostgreSQL port
 });
 
