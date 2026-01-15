@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --watch --env-file=.env app"
+    "dev": "node --watch --env-file=.env app",
+    "populatedb": "node db/populatedb.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/nickonyi/Postgres-with-node-express#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "pg": "^8.16.3"
   }
