@@ -1,13 +1,11 @@
 import { Pool } from "pg";
 
-// All of the following properties should be read from environment variables
-// We're hardcoding them here for simplicity
 const pool = new Pool({
-  host: "localhost", // or wherever the db is hosted
-  user: "phantommobb",
-  database: "top_users",
-  password: "admin123",
-  port: 5432, // default PostgreSQL port
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  database: process.env.DB_NAME,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
 });
 
 export default pool;
