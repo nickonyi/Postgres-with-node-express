@@ -9,7 +9,7 @@ export const getUsers = async (req, res) => {
   const usernames = await getAllUserNames();
   console.log("usernames:", usernames);
 
-  res.send("usernames: " + usernames.map((user) => user.username).join(","));
+  res.send("usernames: " + usernames.map((user) => user.username).join(", "));
 };
 
 export const showNewForm = (req, res) => {
